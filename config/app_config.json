@@ -1,0 +1,46 @@
+{
+  "camera": {
+    "index":     0,
+    "width":     1280,
+    "height":    720,
+    "buffer":    1
+  },
+
+  "inference": {
+    "landmark_model":        "hand_landmarker.task",
+    "keras_model":           "model/gesture_model.keras",
+    "detection_confidence":  0.6,
+    "presence_confidence":   0.6,
+    "tracking_confidence":   0.5,
+    "infer_resolution":      [480, 360]
+  },
+
+  "ui": {
+    "window_title":     "HandSpeak",
+    "theme":            "strange",
+    "panel_height":     120,
+    "font_scale":       1.0,
+    "show_fps":         true,
+    "show_confidence":  true,
+    "landmark_radius":  5,
+    "mandala_rings":    3,
+    "glow_intensity":   0.6
+  },
+
+  "tts": {
+    "rate":    160,
+    "volume":  1.0
+  },
+
+  "performance": {
+    "target_fps":        30,
+    "fps_history_len":   30,
+    "max_infer_skip":    4
+  },
+
+  "paths": {
+    "data_dir":    "data",
+    "model_dir":   "model",
+    "config_dir":  "config"
+  }
+}

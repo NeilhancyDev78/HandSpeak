@@ -1,0 +1,50 @@
+{
+  "gestures": {
+    "A":      { "type": "letter",  "output": "A"      },
+    "B":      { "type": "letter",  "output": "B"      },
+    "C":      { "type": "letter",  "output": "C"      },
+    "D":      { "type": "letter",  "output": "D"      },
+    "E":      { "type": "letter",  "output": "E"      },
+    "F":      { "type": "letter",  "output": "F"      },
+    "G":      { "type": "letter",  "output": "G"      },
+    "H":      { "type": "letter",  "output": "H"      },
+    "I":      { "type": "letter",  "output": "I"      },
+    "J":      { "type": "letter",  "output": "J"      },
+    "K":      { "type": "letter",  "output": "K"      },
+    "L":      { "type": "letter",  "output": "L"      },
+    "M":      { "type": "letter",  "output": "M"      },
+    "N":      { "type": "letter",  "output": "N"      },
+    "O":      { "type": "letter",  "output": "O"      },
+    "P":      { "type": "letter",  "output": "P"      },
+    "Q":      { "type": "letter",  "output": "Q"      },
+    "R":      { "type": "letter",  "output": "R"      },
+    "S":      { "type": "letter",  "output": "S"      },
+    "T":      { "type": "letter",  "output": "T"      },
+    "U":      { "type": "letter",  "output": "U"      },
+    "V":      { "type": "letter",  "output": "V"      },
+    "W":      { "type": "letter",  "output": "W"      },
+    "X":      { "type": "letter",  "output": "X"      },
+    "Y":      { "type": "letter",  "output": "Y"      },
+    "Z":      { "type": "letter",  "output": "Z"      },
+    "SPACE":  { "type": "command", "output": " "      },
+    "DELETE": { "type": "command", "output": "DELETE" },
+    "SPEAK":  { "type": "command", "output": "SPEAK"  }
+  },
+
+  "recognition": {
+    "vote_window_frames":    12,
+    "vote_threshold_pct":    0.75,
+    "min_confidence":        0.80,
+    "hold_frames_required":  15,
+    "break_timeout_ms":      400,
+    "commit_cooldown_ms":    1500,
+    "repeat_break_ms":       400
+  },
+
+  "collector": {
+    "samples_per_gesture":   200,
+    "pre_capture_countdown": 3,
+    "post_capture_cooldown": 2,
+    "capture_fps_limit":     30
+  }
+}
